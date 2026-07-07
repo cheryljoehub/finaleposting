@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Postings | College of Business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="jobs-style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<div class="strata" aria-hidden="true">
+  <div class="layer layer-1"></div>
+  <div class="layer layer-2"></div>
+  <div class="layer layer-3"></div>
+  <div class="layer layer-4"></div>
+  <div class="layer layer-5"></div>
+</div>
+
+<div class="ticker-bar">
+  <div class="ticker-track" id="ticker-track"></div>
+</div>
+
+<div class="container">
+  <div class="page-actions">
+    <button id="backBtn" onclick="goBack()" aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 5 L8 12 L15 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <span class="mark-line">GRAND CANYON UNIVERSITY</span>
+  <h1>Job Postings</h1>
+  <p class="subtitle">Browse open roles by department, check off the ones you want, and we'll email you the links.</p>
+
+  <div class="stat-strip" id="stat-strip"></div>
+
+  <div class="board">
+    <nav class="majors" id="majors-nav"></nav>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2 class="panel-title" id="panel-title">—</h2>
+          <p class="panel-desc" id="panel-desc"></p>
+        </div>
+        <span class="week-chip" id="week-chip"></span>
+      </div>
+      <ol class="job-list" id="job-list"></ol>
+    </div>
+  </div>
+
+  <p class="board-footer">Postings refresh every Monday · past week's jobs are removed</p>
+</div>
+
+<!-- Floating selection bar -->
+<div class="selection-bar" id="selection-bar">
+  <span class="selection-count"><b id="selected-count">0</b> job<span id="plural-s">s</span> selected</span>
+  <button class="btn-gold" id="email-btn">Email Me These Links</button>
+</div>
+
+<!-- Email modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <h3>Send to Your Email</h3>
+    <p class="modal-sub" id="modal-sub">We'll send the links for your selected roles.</p>
+
+    <ul class="modal-job-list" id="modal-job-list"></ul>
+
+    <label class="modal-label" for="email-input">Email address</label>
+    <input type="email" id="email-input" class="modal-input" placeholder="you@example.com" />
+
+    <button class="btn-gold btn-full" id="send-btn">Send Links</button>
+    <p class="modal-status" id="modal-status"></p>
+  </div>
+</div>
+
+<script src="jobs-script.js"></script>
+</body>
+</html>
