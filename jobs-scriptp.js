@@ -150,13 +150,13 @@ const MAJORS = {
      /* { title: "Founder's Associate", company: "Example Startup", link: "#" },
       { title: "Venture Analyst", company: "Example Ventures", link: "#" },
       { title: "Startup Operations Associate", company: "Example Labs", link: "#" },
-      { title: "Growth Associate", company: "Example Startup", link: "#" },
+      { title: "Growth Associate", company: "Example Startup", link: "#" },*/
       { title: "Business Development Associate", company: "Example Co.", link: "#" },
       { title: "Incubator Program Coordinator", company: "Example Accelerator", link: "#" },
       { title: "Product Associate", company: "Example App", link: "#" },
       { title: "Venture Capital Intern", company: "Example Fund", link: "#" },
       { title: "New Ventures Analyst", company: "Example Group", link: "#" },
-      { title: "Startup Founder Fellow", company: "Example Foundation", link: "#" }*/
+      { title: "Startup Founder Fellow", company: "Example Foundation", link: "#" }
     ]
   },
   hospitality: {
