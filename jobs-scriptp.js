@@ -41,9 +41,9 @@ const MAJORS = {
     desc: "Investment banking, corporate finance, and asset management roles.",
     jobs: [
       { title: "Investment Banking Analyst", company: "Example Bank", link: "www.google.com" },
-      { title: "Director, Credit Risk", company: "Sallie Mae", link: "https://sallie-mae.wd5.myworkdayjobs.com/en-US/Careers/job/Director--Credit-Risk_R26_000445" },
+     /* { title: "Director, Credit Risk", company: "Sallie Mae", link: "https://sallie-mae.wd5.myworkdayjobs.com/en-US/Careers/job/Director--Credit-Risk_R26_000445" },
       { title: "Financial Analyst", company: "Example Inc.", link: "#" },
-     /* { title: "Credit Analyst", company: "Example Capital", link: "#" },
+      { title: "Credit Analyst", company: "Example Capital", link: "#" },
       { title: "Treasury Analyst", company: "Example Holdings", link: "#" },
       { title: "Wealth Management Associate", company: "Example Wealth", link: "#" },
       { title: "Equity Research Associate", company: "Example Securities", link: "#" },
