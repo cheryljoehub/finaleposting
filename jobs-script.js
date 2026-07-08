@@ -49,7 +49,7 @@ const MAJORS = {
       { title: "Equity Research Associate", company: "Example Securities", link: "#" },
       { title: "FP&A Analyst", company: "Example Group", link: "#" },
       { title: "Private Equity Analyst", company: "Example Partners", link: "#" },*/
-      { title: "Risk Analyst", company: "Example Bank", link: "#" }
+    //  { title: "Risk Analyst", company: "Example Bank", link: "#" }
     ]
   },
   accounting: {
