@@ -129,11 +129,11 @@ const MAJORS = {
     trend: "up",
     desc: "Data and business intelligence roles across industries.",
     jobs: [
-     /* { title: "Business Analyst", company: "Example Data Co.", link: "#" },
+      { title: "Business Analyst", company: "Example Data Co.", link: "#" },
       { title: "Data Analyst", company: "Example Analytics", link: "#" },
       { title: "BI Developer", company: "Example Tech", link: "#" },
       { title: "Reporting Analyst", company: "Example Corp", link: "#" },
-      { title: "Operations Analyst", company: "Example Holdings", link: "#" },
+    /*  { title: "Operations Analyst", company: "Example Holdings", link: "#" },
       { title: "Insights Analyst", company: "Example Retail", link: "#" },
       { title: "Junior Data Scientist", company: "Example Labs", link: "#" },
       { title: "Analytics Consultant", company: "Example Consulting", link: "#" },
