@@ -58,7 +58,7 @@ const MAJORS = {
     desc: "Audit, tax, and staff accounting positions at firms of every size.",
     jobs: [
      /* { title: "Staff Auditor", company: "Example & Co.", link: "#" },
-      { title: "Tax Associate", company: "Example Advisory", link: "#" },
+      { title: "Tax Associate", company: "Example Advisory", link: "#" },*/
       { title: "Junior Accountant", company: "Example Firm", link: "#" },
       { title: "Accounts Payable Associate", company: "Example Corp", link: "#" },
       { title: "Internal Audit Associate", company: "Example Holdings", link: "#" },
@@ -66,7 +66,7 @@ const MAJORS = {
       { title: "Payroll Accountant", company: "Example Group", link: "#" },
       { title: "Forensic Accounting Assistant", company: "Example Advisory", link: "#" },
       { title: "Bookkeeper", company: "Example Small Biz", link: "#" },
-      { title: "Compliance Associate", company: "Example & Co.", link: "#" }*/
+      { title: "Compliance Associate", company: "Example & Co.", link: "#" }
     ]
   },
   economics: {
