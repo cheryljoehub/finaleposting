@@ -256,8 +256,10 @@ let activeMajor = Object.keys(MAJORS)[0];
 
 // selection map keyed by "majorKey::index" → job object
 const selected = new Map();
+const PREVIOUS_PAGE_KEY = "jobPostingsPreviousPage";
 
 function init() {
+  rememberPreviousPage();
   buildStats();
   buildTicker();
   buildNav();
@@ -267,8 +269,19 @@ function init() {
   bindBackButton();
 }
 
+function rememberPreviousPage() {
+  const referrer = document.referrer;
+  if (referrer && referrer !== window.location.href) {
+    sessionStorage.setItem(PREVIOUS_PAGE_KEY, referrer);
+  }
+}
+
 function goBack() {
-  if (document.referrer) {
+  const storedPreviousPage = sessionStorage.getItem(PREVIOUS_PAGE_KEY);
+
+  if (storedPreviousPage && storedPreviousPage !== window.location.href) {
+    window.location.href = storedPreviousPage;
+  } else if (document.referrer && document.referrer !== window.location.href) {
     window.location.href = document.referrer;
   } else if (window.history.length > 1) {
     window.history.back();
